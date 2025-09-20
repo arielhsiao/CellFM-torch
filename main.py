@@ -74,7 +74,7 @@ def basic(args):
                 prep=prep,
                 batch_size=cfg.use_bs,
                 drop=False,
-                shuffle=True
+                shuffle=False
             )
         return loader
     ################### training ###################
