@@ -62,7 +62,7 @@ def basic(args):
                 prep=prep,
                 batch_size=cfg.use_bs,
                 pad_zero=cfg.pad_zero,
-                drop=True,
+                drop=False,
                 shuffle=True
             )
         if mode== "test":
@@ -73,7 +73,7 @@ def basic(args):
                 dataset,
                 prep=prep,
                 batch_size=cfg.use_bs,
-                drop=True,
+                drop=False,
                 shuffle=True
             )
         return loader
